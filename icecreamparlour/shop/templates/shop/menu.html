@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlor Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2d2d2d;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+        }
+        
+        .navbar-brand {
+            color: #ffb6c1 !important;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f1f1f1 !important;
+            font-size: 1.1em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffb6c1 !important;
+        }
+
+        /* Hero Section */
+        header {
+            background-color: #333;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            color: #ffb6c1;
+        }
+
+        /* Menu Section */
+        .card-body {
+            background-color: #444;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .card-title {
+            color: #ffb6c1;
+        }
+
+        .cta-btn {
+            background-color: #ffb6c1;
+            color: #333;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff77a9;
+        }
+
+        .card {
+            background-color: #555;
+            border: none;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ice Cream Parlor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Ice Cream Parlor Menu</h1>
+    </header>
+
+    <!-- Menu Section -->
+    <div class="container my-5" id="menu">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Delight</h5>
+                        <p class="card-text">Rich and creamy chocolate ice cream.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Sensation</h5>
+                        <p class="card-text">Fresh strawberry ice cream made with real fruit.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vanilla Dream</h5>
+                        <p class="card-text">A classic vanilla ice cream with a smooth texture.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mint Chocolate Chip</h5>
+                        <p class="card-text">Cool mint ice cream with chocolate chips.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee Crunch</h5>
+                        <p class="card-text">A rich coffee ice cream with a crunchy twist.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cookie Dough</h5>
+                        <p class="card-text">A delicious blend of cookie dough and ice cream.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pistachio Pleasure</h5>
+                        <p class="card-text">A nutty and creamy pistachio-flavored ice cream.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Peachy Keen</h5>
+                        <p class="card-text">Fresh and creamy peach ice cream.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lemon Sorbet</h5>
+                        <p class="card-text">A refreshing, tangy lemon sorbet.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Caramel Swirl</h5>
+                        <p class="card-text">Sweet caramel ice cream with a swirl of syrup.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tiramisu Treat</h5>
+                        <p class="card-text">A coffee-flavored ice cream with a mascarpone twist.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bubblegum Bliss</h5>
+                        <p class="card-text">Sweet and colorful bubblegum ice cream.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 13 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hazelnut Harmony</h5>
+                        <p class="card-text">A creamy hazelnut ice cream with rich flavor.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 14 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Blackberry Bliss</h5>
+                        <p class="card-text">A sweet and tart blackberry-flavored ice cream.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 15 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana Split</h5>
+                        <p class="card-text">A creamy banana ice cream with chocolate chunks.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 16 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mango Madness</h5>
+                        <p class="card-text">Refreshing and smooth mango-flavored ice cream.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

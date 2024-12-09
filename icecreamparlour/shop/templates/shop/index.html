@@ -1,0 +1,181 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Parlor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2d2d2d;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+        }
+        
+        .navbar-brand {
+            color: #ffb6c1 !important;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #f1f1f1 !important;
+            font-size: 1.1em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffb6c1 !important;
+        }
+
+        /* Hero section styles */
+        header {
+            background-color: #333;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            color: #ffb6c1;
+        }
+
+        .hero-section {
+            background-color: #444;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero-section h2 {
+            font-size: 2.5em;
+            color: #ffb6c1;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        /* Card styles */
+        .card-body {
+            background-color: #444;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .card-title {
+            color: #ffb6c1;
+        }
+
+        .cta-btn {
+            background-color: #ffb6c1;
+            color: #333;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff77a9;
+        }
+
+        .card {
+            background-color: #555;
+            border: none;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ice Cream Parlor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url '' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Order Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'menu' %}">Flavors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Ice Cream Parlor</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h2>Indulge in the Best Ice Cream Flavors</h2>
+        <p>Experience the creamy goodness of hand-crafted ice creams, made from the finest ingredients. Discover a variety of flavors that will satisfy your cravings and bring a smile to your face.</p>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Delight</h5>
+                        <p class="card-text">A rich and creamy chocolate ice cream, perfect for chocolate lovers.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Sensation</h5>
+                        <p class="card-text">Fresh strawberry ice cream made with real fruit for a refreshing experience.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vanilla Dream</h5>
+                        <p class="card-text">A classic vanilla ice cream with a smooth and velvety texture.</p>
+                        <a href="#order" class="cta-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
